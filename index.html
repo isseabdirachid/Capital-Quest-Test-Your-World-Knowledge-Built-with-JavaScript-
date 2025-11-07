@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauptstädte-Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Geografie-Hauptstädte-Challenge</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Über-uns</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Page Section -->
+    <div id="landing-page" class="landing-page">
+        <div class="landing-container">
+            <h1>Willkommen zur Hauptstädte-Challenge</h1>
+            <p>Teste dein Wissen über Hauptstädte mit unserem umfassenden Test! Diese Website wurde entwickelt, um dein Wissen über Geografie und Hauptstädte aus aller Welt zu prüfen.</p>
+            <p>Ob du ein Anfänger oder ein erfahrener Geografie-Enthusiast bist, unser Test wird dein Verständnis für wichtige Konzepte herausfordern. Mach dich bereit, dein Wissen zu verbessern und mehr über Hauptstädte zu lernen!</p>
+            <div class="landing-buttons">
+                <button id="start-exam-button" class="landing-button">Start Test</button>
+                <button id="example-button" class="landing-button">Beispiel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exam Container -->
+    <div id="exam-container" class="exam-container" style="display: none;">
+        <div class="exam-header">
+            <h2>Hauptstädte-Test</h2>
+            <div class="timer">
+                <span>Zeit: </span>
+                <span id="time">05:00</span>
+            </div>
+            <div class="question-count">
+                <span>Frage: </span>
+                <span id="current-question">1</span> / <span id="total-questions">20</span>
+            </div>
+        </div>
+        <div class="question-container">
+            <h3 id="question-text">Loading Frage...</h3>
+            <div class="options">
+                <!-- Options will be generated dynamically -->
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="prev-button" class="nav-button" disabled>Vorherige</button>
+            <button id="next-button" class="nav-button">Nächste</button>
+        </div>
+        <!-- Result Section -->
+        <div id="result-container" class="result-container" style="display: none;">
+            <h3>Testergebnisse</h3>
+            <p id="result-text"></p>
+            <div id="score-percentage"></div>
+            <button id="retry-button" class="nav-button">Wiederholen</button>
+        </div>
+    </div>
+
+    <!-- Example Modal (Hidden by Default) -->
+    <div id="example-modal" class="example-modal" style="display: none;">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h3>Beispiel</h3>
+            <p>Dies ist ein Beispiel dafür, wie der Test funktioniert. Klicke auf die Optionen, um deine Antwort auszuwählen, und benutze die Navigationsschaltflächen, um zwischen den Fragen zu wechseln. Deine Punktzahl wird am Ende basierend auf deinen Antworten berechnet.</p>
+        </div>
+    </div>
+
+    <!-- Audio Element for Sound Effect -->
+    <audio id="congrats-audio" src="/sounds/congrats.mp3"></audio>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Isse. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

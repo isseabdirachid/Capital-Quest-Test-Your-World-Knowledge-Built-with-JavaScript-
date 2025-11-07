@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://media.istockphoto.com/id/1397987246/de/foto/flaggen-der-nato-north-atlantic-treaty-organization-schweden-finnland-3d-illustration-isoliert.jpg?s=2048x2048&w=is&k=20&c=-n0zXOyVW5oXnv9ot271vSbEb7krkd-yXIGE4UOL0AQ=') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navigation Menu Styles */
+.navbar {
+    width: 100%;
+    background-color: rgba(62, 78, 96, 0.8); /* Semi-transparent background */
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 30px;
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0;
+    
+    font-size: 1.8rem;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.landing-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px 30px;
+    
+}
+
+.landing-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.landing-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.landing-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #0c2a49;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.landing-button:hover {
+    background-color: #0056b3;
+}
+
+/* Exam Container Styles */
+.exam-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+    align-items: center;
+    
+}
+
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:  rgba(93, 215, 201, 0.8);
+    border-radius: 0 14px 0 14px;
+}
+
+.exam-header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.timer, .question-count {
+    font-size: 1rem;
+    color: #555;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question-container h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.option {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #01e609;
+}
+
+.option.selected {
+    background-color: #d1f1dd;
+    border-left: 4px solid #17a2b8;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.nav-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Result Container Styles */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.result-container #score-percentage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Example Modal Styles */
+.example-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+    color: #fff;
+    background-color: rgba(42, 99, 92, 0.8);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Celebration Styles */
+.celebration-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4081;
+    animation: confetti-fall 2s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Summary Container Styles */
+/* .summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: left; */
+
+/* 
+.summary-container h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+} */
+
+/* .summary-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+} */
+
+
+
